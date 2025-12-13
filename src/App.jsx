@@ -5,10 +5,9 @@ import LightPillar from "./components/LightPillar";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import { Technologies } from "./components/Technologies";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
-/* -------------------------
-   SCREEN SIZE DETECTOR
--------------------------- */
 function useIsLargeScreen() {
   const [isLarge, setIsLarge] = useState(false);
 
@@ -96,9 +95,18 @@ function App() {
                 Let’s Talk
               </button>
 
-              <button className="px-6 py-3 rounded-full border border-[#4bfaa5] text-lg font-light text-[#4bfaa5]">
+              <a
+                href="/Md_Rayyan_Sarfaraz_CV.pdf"
+                download="Md_Rayyan_Sarfaraz_CV.pdf"
+                className="
+    px-6 py-3 rounded-full
+    border border-[#4bfaa5]
+    text-lg font-light text-[#4bfaa5]
+    inline-flex items-center justify-center
+  "
+              >
                 Download CV ↓
-              </button>
+              </a>
             </div>
           </div>
 
@@ -130,6 +138,10 @@ function App() {
       <section className="bg-black pt-10 pb-20">
         <Projects />
       </section>
+      
+       <Contact/>
+      
+      <Footer/>
     </>
   );
 }
