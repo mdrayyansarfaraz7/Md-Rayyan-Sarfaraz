@@ -28,14 +28,14 @@ const tools = [
 
 export function Technologies() {
   return (
-    <section className="py-24 px-6 max-w-6xl mx-auto space-y-24">
-
+    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 max-w-6xl mx-auto space-y-20 sm:space-y-24">
+      
       {/* Technologies I Use */}
       <div>
-        <h2 className="text-6xl font-bold text-emerald-500 mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-500 mb-4">
           Technologies <span className="font-thin text-white">I Use</span>
         </h2>
-        <p className="text-white/60 mb-12">
+        <p className="text-sm sm:text-base text-white/60 mb-10 sm:mb-12 max-w-xl">
           Core technologies I rely on to build scalable web applications.
         </p>
 
@@ -45,7 +45,7 @@ export function Technologies() {
             sm:grid-cols-3
             md:grid-cols-4
             lg:grid-cols-5
-            gap-6
+            gap-5 sm:gap-6
           "
         >
           {technologies.map((tech) => (
@@ -56,10 +56,10 @@ export function Technologies() {
 
       {/* Stuff I Use */}
       <div>
-        <h2 className="text-6xl font-bold text-emerald-500 mb-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-emerald-500 mb-4">
           Stuff <span className="font-thin text-white">I Use</span>
         </h2>
-        <p className="text-white/60 mb-12">
+        <p className="text-sm sm:text-base text-white/60 mb-10 sm:mb-12 max-w-xl">
           Tools and platforms that support my daily development workflow.
         </p>
 
@@ -69,7 +69,7 @@ export function Technologies() {
             sm:grid-cols-3
             md:grid-cols-4
             lg:grid-cols-5
-            gap-6
+            gap-5 sm:gap-6
           "
         >
           {tools.map((tool) => (
