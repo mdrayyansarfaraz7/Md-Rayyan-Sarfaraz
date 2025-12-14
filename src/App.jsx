@@ -44,7 +44,7 @@ function App() {
       >
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40" />
-        
+
         {/* Curved wave transition at bottom */}
         <div className="absolute bottom-0 left-0 right-0 pointer-events-none z-40">
           <svg
@@ -67,7 +67,7 @@ function App() {
 
           {/* MAIN CONTENT WRAPPER */}
           <div className="flex lg:flex-row flex-col items-center justify-between w-full h-full px-6 md:px-10 lg:px-20 lg:py-0">
-            
+
             {/* TEXT CONTENT - Animate from left */}
             <div className="flex flex-col gap-4 max-w-4xl text-center lg:text-left lg:flex-1 animate-slideInLeft">
               <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-6xl font-thin leading-tight text-white mt-5 md:mt-10 lg:mt-0">
@@ -98,9 +98,18 @@ function App() {
               {/* CTA BUTTONS */}
               <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 {/* Hide "Let's Talk" on small screens */}
-                <button className="block px-6 py-3 rounded-full bg-black text-white text-lg border border-white/20 hover:bg-white/10 transition-colors">
-                  Let's Talk
-                </button>
+                <a
+                  href="https://wa.me/91073832503"
+                  target="_blank"
+                  rel="noopener noreferrer"
+
+                >
+                  <button className="block px-6 py-3 rounded-full bg-black text-white text-lg border border-white/20 hover:bg-white/10 transition-colors">
+
+                    Let's Talk
+                  </button>
+                </a>
+
 
                 {/* Hide Download CV on small screens, show on md and up */}
                 <a
@@ -137,7 +146,7 @@ function App() {
                   animate-slideInUp
                 "
               />
-              
+
               {/* Large screens (LG & XL): Show floating image on right */}
               <img
                 src="/rayyan.png"
@@ -174,10 +183,10 @@ function App() {
       <section id="projects" className="bg-black pt-10 pb-20">
         <Projects />
       </section>
-      
+
       <Contact />
-      
-      <Footer/>
+
+      <Footer />
 
       {/* ANIMATIONS STYLES */}
       <style>{`
