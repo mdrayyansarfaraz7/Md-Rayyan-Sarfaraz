@@ -23,7 +23,7 @@ function useIsLargeScreen() {
 function App() {
   const isLargeScreen = useIsLargeScreen();
   console.log(isLargeScreen);
-  
+
   // Preload background image
   useEffect(() => {
     const img = new Image();
@@ -98,7 +98,7 @@ function App() {
               {/* CTA BUTTONS */}
               <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 {/* Hide "Let's Talk" on small screens */}
-                <button className="hidden sm:block px-6 py-3 rounded-full bg-black text-white text-lg border border-white/20 hover:bg-white/10 transition-colors">
+                <button className="block px-6 py-3 rounded-full bg-black text-white text-lg border border-white/20 hover:bg-white/10 transition-colors">
                   Let's Talk
                 </button>
 
