@@ -337,16 +337,20 @@ const LightPillar = ({
     webGLSupported
   ]);
 
-  if (!webGLSupported) {
-    return (
-      <div
-        className={`w-full h-full absolute top-0 left-0 flex items-center justify-center bg-black/10 text-gray-500 text-sm ${className}`}
-        style={{ mixBlendMode }}
-      >
-        WebGL not supported
-      </div>
-    );
-  }
+if (!webGLSupported) {
+  return (
+    <div
+      className={`w-full h-full absolute top-0 left-0 ${className}`}
+      style={{
+        mixBlendMode,
+        backgroundImage: "url('/image.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    />
+  );
+}
 
   return (
     <div ref={containerRef} className={`w-full h-full absolute top-0 left-0 ${className}`} style={{ mixBlendMode }} />
