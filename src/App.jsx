@@ -99,7 +99,7 @@ function App() {
               <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
 
                 <a
-                  href="https://wa.me/91073832503"
+                  href="https://wa.me/9073832503"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto"

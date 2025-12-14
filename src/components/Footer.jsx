@@ -40,7 +40,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://wa.me/91073832503"
+              href="https://wa.me/9073832503"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/60 hover:text-emerald-400 transition"
