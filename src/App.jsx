@@ -23,6 +23,7 @@ function useIsLargeScreen() {
 function App() {
   const isLargeScreen = useIsLargeScreen();
   console.log(isLargeScreen);
+  
   // Preload background image
   useEffect(() => {
     const img = new Image();
