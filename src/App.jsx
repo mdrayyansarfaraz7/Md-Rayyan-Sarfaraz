@@ -97,36 +97,44 @@ function App() {
 
               {/* CTA BUTTONS */}
               <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                {/* Hide "Let's Talk" on small screens */}
+
                 <a
                   href="https://wa.me/91073832503"
                   target="_blank"
                   rel="noopener noreferrer"
-
+                  className="w-full sm:w-auto"
                 >
-                  <button className="block px-6 py-3 rounded-full bg-black text-white text-lg border border-white/20 hover:bg-white/10 transition-colors">
-
+                  <button
+                    className="
+        w-full
+        px-6 py-3
+        rounded-full
+        bg-black text-white text-lg
+        border border-white/20
+        hover:bg-white/10 transition-colors
+      "
+                  >
                     Let's Talk
                   </button>
                 </a>
 
-
-                {/* Hide Download CV on small screens, show on md and up */}
                 <a
                   href="/Md_Rayyan_Sarfaraz_CV.pdf"
                   download="Md_Rayyan_Sarfaraz_CV.pdf"
                   className="
-                    inline-flex
-                    px-6 py-3 rounded-full
-                    border border-[#4bfaa5]
-                    text-base lg:text-lg font-light text-[#4bfaa5]
-                    items-center justify-center
-                    hover:bg-[#4bfaa5]/10 transition-colors
-                  "
+      w-full sm:w-auto
+      inline-flex
+      px-6 py-3 rounded-full
+      border border-[#4bfaa5]
+      text-base lg:text-lg font-light text-[#4bfaa5]
+      items-center justify-center
+      hover:bg-[#4bfaa5]/10 transition-colors
+    "
                 >
                   Download CV ↓
                 </a>
               </div>
+
             </div>
 
             {/* IMAGE SECTION - Animate from bottom */}
