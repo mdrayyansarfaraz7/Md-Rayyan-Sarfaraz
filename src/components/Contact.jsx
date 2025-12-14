@@ -1,6 +1,26 @@
 function Contact() {
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const name = e.target.name.value.trim();
+  const email = e.target.email.value.trim();
+  const message = e.target.message.value.trim();
+
+  if (!name || !email || !message) return;
+
+  const gmailURL =
+    `https://mail.google.com/mail/?view=cm&fs=1` +
+    `&to=mdrayyansarfaraz7@gmail.com` +
+    `&su=${encodeURIComponent(`Portfolio Inquiry — ${name}`)}` +
+    `&body=${encodeURIComponent(
+      `\n${message}`
+    )}`;
+
+  window.open(gmailURL, "_blank");
+};
+
   return (
-    <section id="contact" className="w-full bg-black py-5">
+    <section id="contact" className="w-full bg-black py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           
@@ -19,7 +39,7 @@ function Contact() {
             </p>
 
             <p className="text-white/50 text-sm">
-              I usually respond within 24 hours.
+              This will open your email client. I usually respond within 24 hours.
             </p>
           </div>
 
@@ -33,16 +53,20 @@ function Contact() {
               shadow-[0_0_70px_-25px_rgba(16,185,129,0.3)]
             "
           >
-            {/* subtle glow */}
+            {/* Subtle glow */}
             <div className="absolute inset-0 pointer-events-none rounded-2xl bg-linear-to-br from-emerald-500/10 via-transparent to-transparent" />
 
-            <form className="relative p-10 flex flex-col gap-6">
+            <form
+              onSubmit={handleSubmit}
+              className="relative p-10 flex flex-col gap-6"
+            >
               {/* Name */}
               <div>
                 <label className="text-xs uppercase tracking-wider text-white/60">
                   Name
                 </label>
                 <input
+                  name="name"
                   type="text"
                   required
                   className="
@@ -63,6 +87,7 @@ function Contact() {
                   Email
                 </label>
                 <input
+                  name="email"
                   type="email"
                   required
                   className="
@@ -83,6 +108,7 @@ function Contact() {
                   Message
                 </label>
                 <textarea
+                  name="message"
                   rows="4"
                   required
                   className="
@@ -110,7 +136,7 @@ function Contact() {
                   hover:bg-emerald-400 transition
                 "
               >
-                Send Message →
+                Send via Email →
               </button>
             </form>
           </div>
