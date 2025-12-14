@@ -39,11 +39,8 @@ function Projects() {
                     <ProjectCard
                         title="Revelo"
                         description="
-              A collaborative design platform that enables designers to share,
-              refine, and build upon others’ creations. Creozone supports
-              community-driven contributions, structured feedback, and
-              refinement workflows—bringing a GitHub-like collaboration model
-              to the design ecosystem.
+A centralized platform for college fests and events that allows institutes to host, manage, and track
+events, registrations, and bookings, including payments.
             "
                         image="/project/image3.png"
                         tech={[

@@ -106,7 +106,7 @@ function App() {
                   href="/Md_Rayyan_Sarfaraz_CV.pdf"
                   download="Md_Rayyan_Sarfaraz_CV.pdf"
                   className="
-                    hidden md:inline-flex
+                    inline-flex
                     px-6 py-3 rounded-full
                     border border-[#4bfaa5]
                     text-base lg:text-lg font-light text-[#4bfaa5]
@@ -131,7 +131,7 @@ function App() {
                 className="
                   block sm:block md:hidden lg:hidden xl:hidden
                   w-full max-w-lg mx-auto
-                  mt-4 mb-0
+                   mb-0
                   object-contain
                 "
               />
@@ -157,16 +157,16 @@ function App() {
       </section>
 
       {/* EXPERIENCE */}
-      <section className="bg-black pt-10">
+      <section id="experience" className="bg-black pt-10">
         <Experience />
       </section>
 
       {/* PROJECTS */}
-      <section className="bg-black pt-10 pb-20">
+      <section id="projects" className="bg-black pt-10 pb-20">
         <Projects />
       </section>
       
-      <Contact/>
+      <Contact />
       
       <Footer/>
     </>
